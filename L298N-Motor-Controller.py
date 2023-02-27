@@ -1,4 +1,5 @@
 import RPi.GPIO as GPIO
+import time as t
 GPIO.setmode(GPIO.BOARD)
 in1 = 11
 in2 = 12
@@ -46,4 +47,7 @@ setMotorAdirection(1)
 setMotorBdirection(1)
 setMotorAspeed(50)
 setMotorBspeed(100)
+t.sleep(5)
+motorASpeed.stop()
+motorBSpeed.stop()
 GPIO.cleanup()

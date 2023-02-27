@@ -7,12 +7,12 @@ in3 = 15
 in4 = 16
 ena = 13
 enb = 18
-GPIO.setup(in1,GPIO.out)
-GPIO.setup(in2,GPIO.out)
-GPIO.setup(in3,GPIO.out)
-GPIO.setup(in4,GPIO.out)
-GPIO.setup(ena,GPIO.out)
-GPIO.setup(enb,GPIO.out)
+GPIO.setup(in1,GPIO.OUT)
+GPIO.setup(in2,GPIO.OUT)
+GPIO.setup(in3,GPIO.OUT)
+GPIO.setup(in4,GPIO.OUT)
+GPIO.setup(ena,GPIO.OUT)
+GPIO.setup(enb,GPIO.OUT)
 motorASpeed = GPIO.PWM(ena,1000)
 motorBSpeed = GPIO.PWM(enb,1000)
 motorASpeed.start(0)
